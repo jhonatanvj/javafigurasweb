@@ -1,0 +1,10 @@
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: inline-block;
+            width: 120px;
+        }
+        .input-group input {
+            width: 150px;
+        }

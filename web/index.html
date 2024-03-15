@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link  href="estilo.css" rel="stylesheet" type="text/css" >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+<body>
+    <form id="formCalculadora" action="Servelt">
+        <div class="input-group">
+            <label for="figura">Seleccione la figura:</label>
+            <select id="figura" name="figura">
+                <option value="triangulo">Triángulo</option>
+                <option value="cuadrado">Cuadrado</option>
+                <option value="trapecio">Trapecio</option>
+            </select>
+        </div>
+        <div id="trianguloInputs" style="display: none;" class="input-group">
+            <label for="baseTriangulo">Base:</label>
+            <input type="text" id="baseTriangulo" name="baseTriangulo">
+            <label for="alturaTriangulo">Altura:</label>
+            <input type="text" id="alturaTriangulo" name="alturaTriangulo">
+        </div>
+        <div id="cuadradoInputs" style="display: none;" class="input-group">
+            <label for="ladoCuadrado">Lado:</label>
+            <input type="text" id="ladoCuadrado" name="ladoCuadrado">
+        </div>
+        <div id="trapecioInputs" style="display: none;" class="input-group">
+            <div>
+                <label for="baseMayorTrapecio">Base Mayor:</label>
+                <input type="text" id="baseMayorTrapecio" name="base2Trapecio">
+            </div>
+            <div>
+                <label for="baseMenorTrapecio">Base Menor:</label>
+                <input type="text" id="baseMenorTrapecio" name="base1Trapecio">
+            </div>
+            <div>
+                <label for="alturaTrapecio">Altura:</label>
+                <input type="text" id="alturaTrapecio" name="alturaTrapecio">
+            </div>
+            <div>
+                <label for="ladoTrapecio">Lado:</label>
+                <input type="text" id="ladoTrapecio" name="ladoTrapecio">
+            </div>
+        </div>
+        <button type="submit">Calcular</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+     
+</html>
